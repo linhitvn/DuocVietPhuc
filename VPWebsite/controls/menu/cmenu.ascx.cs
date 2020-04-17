@@ -14,10 +14,10 @@ public partial class controls_menu_cmenu : System.Web.UI.UserControl
     protected void Page_Load(object sender, EventArgs e)
     {
         CssActive();
-        if (!Page.IsPostBack)
-        {
-            LoadProduct();
-        }
+        //if (!Page.IsPostBack)
+        //{
+        //    LoadProduct();
+        //}
         //LoadDropdown();
     }
     private void CssActive()
@@ -38,6 +38,9 @@ public partial class controls_menu_cmenu : System.Web.UI.UserControl
             case "ABOUT":
                 liAbout.Attributes["class"] = "nav-item active";
                 break;
+            case "INFO":
+                liInfo.Attributes["class"] = "nav-item active";
+                break;
             default:
                 liHome.Attributes["class"] = "nav-item active";
                 break;
@@ -54,7 +57,7 @@ public partial class controls_menu_cmenu : System.Web.UI.UserControl
 
             if (dt.Rows.Count > 0)
             {
-                lblQuantity.Text = dt.Compute("SUM(Quantity)", string.Empty).ToString();
+                //lblQuantity.Text = dt.Compute("SUM(Quantity)", string.Empty).ToString();
                 lblTotal.Text = Convert.ToInt32(dt.Compute("SUM(TotalPrice)", string.Empty)).ToString("#,##");
             }
             // Load       

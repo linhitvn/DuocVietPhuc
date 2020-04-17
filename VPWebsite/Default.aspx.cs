@@ -57,12 +57,15 @@ public partial class _Default : System.Web.UI.Page
             case "CONT":
                 // Contact Us
                 dvContact.Controls.Add(LoadControl(WebConfigurationManager.AppSettings["WebHome"] + "controls/content/cContact.ascx"));
-                dvBestseller.Controls.Add(LoadControl(WebConfigurationManager.AppSettings["WebHome"] + "controls/content/cBestseller.ascx"));
+                //dvBestseller.Controls.Add(LoadControl(WebConfigurationManager.AppSettings["WebHome"] + "controls/content/cBestseller.ascx"));
                 break;
             case "ABOUT":
                 // About Us
                 dvAbout.Controls.Add(LoadControl(WebConfigurationManager.AppSettings["WebHome"] + "controls/content/cAbout.ascx"));
-                dvBestseller.Controls.Add(LoadControl(WebConfigurationManager.AppSettings["WebHome"] + "controls/content/cBestseller.ascx"));
+                break;
+            case "INFO":
+                // Info
+                dvAbout.Controls.Add(LoadControl(WebConfigurationManager.AppSettings["WebHome"] + "controls/content/cInfo.ascx"));
                 break;
             case "SER":
                 // Search
@@ -71,7 +74,7 @@ public partial class _Default : System.Web.UI.Page
             default:
                 //// main home               
                 dvSlider.Controls.Add(LoadControl(WebConfigurationManager.AppSettings["WebHome"] + "controls/content/cSlider.ascx"));
-                dvProduct.Controls.Add(LoadControl(WebConfigurationManager.AppSettings["WebHome"] + "controls/content/cHProducts.ascx"));
+                //dvProduct.Controls.Add(LoadControl(WebConfigurationManager.AppSettings["WebHome"] + "controls/content/cHProducts.ascx"));
                 
                 break;
         }        

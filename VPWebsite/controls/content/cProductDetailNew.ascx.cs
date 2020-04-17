@@ -45,8 +45,11 @@ public partial class controls_content_cProductDetailNew : System.Web.UI.UserCont
                 if (dt.Rows[0]["ImgLink1"].ToString() != "")
                     imgLink.ImageUrl = dt.Rows[0]["ImgLink1"].ToString();
 
-
-                lblPrice.Text = Convert.ToInt32(dt.Rows[0]["Price"]).ToString("#,##");
+                int iPrice = Convert.ToInt32(dt.Rows[0]["Price"]);
+                if (iPrice > 0)
+                    lblPrice.Text = iPrice.ToString("#,##") + " VNĐ";
+                else
+                    lblPrice.Text = "Liên hệ";
 
                 //if(dt.Rows[0]["SalePrice"].ToString() != "0")
                 //{
@@ -55,7 +58,7 @@ public partial class controls_content_cProductDetailNew : System.Web.UI.UserCont
                 if (Convert.ToBoolean(dt.Rows[0]["IsHiddenWhenOutoff"]))
                 {
                     lblOutofStock.Text = "Hết hàng";
-                    pnlOutofStock.Visible = false;
+                    //pnlOutofStock.Visible = false;
                 }
                 else
                 {
@@ -64,7 +67,7 @@ public partial class controls_content_cProductDetailNew : System.Web.UI.UserCont
                     
                 lblDescription.Text = dt.Rows[0]["Description"].ToString();
 
-                lblPID.Text = ID.ToString();
+                //lblPID.Text = ID.ToString();
 
                 // Load product relate
                 DataTable dtDetail = new DataTable();
@@ -101,21 +104,21 @@ public partial class controls_content_cProductDetailNew : System.Web.UI.UserCont
 
     protected void lkbAddCart_Click(object sender, EventArgs e)
     {
-        try
-        {
-            if (string.IsNullOrEmpty(txtQuantity.Text.Trim()))
-                return;
+        //try
+        //{
+        //    if (string.IsNullOrEmpty(txtQuantity.Text.Trim()))
+        //        return;
 
-            DAOrderDetailTemp mOrder = new DAOrderDetailTemp();
-            int iProductID = int.Parse(lblPID.Text);
-            int iQuantity = int.Parse(txtQuantity.Text);
-            if (iProductID>0)
-            {
-                mOrder.USP_OrderDetailTemp_Insert(Session["WOrderID"].ToString(), iProductID, iQuantity);               
-            }
+        //    DAOrderDetailTemp mOrder = new DAOrderDetailTemp();
+        //    int iProductID = int.Parse(lblPID.Text);
+        //    int iQuantity = int.Parse(txtQuantity.Text);
+        //    if (iProductID>0)
+        //    {
+        //        mOrder.USP_OrderDetailTemp_Insert(Session["WOrderID"].ToString(), iProductID, iQuantity);               
+        //    }
             
-        }
-        catch { return; };
-        Response.Redirect("/gio-hang/index.html");
+        //}
+        //catch { return; };
+        //Response.Redirect("/gio-hang/index.html");
     }
 }

@@ -1,17 +1,35 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="cContact.ascx.cs" Inherits="controls_content_cContact" %>
-
-<div class="contact-box-main">
+<!-- Start All Title Box -->
+<div class="all-title-box">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-sm-12">
-                <div class="contact-info-left" runat="server" id="divContactUs">                    
+            <div class="col-lg-12">
+                <div class="title-all text-center">
+                    <h1>Công ty TNHH Dược phẩm Việt Phúc </h1>
+                    <h3>(VIET PHUC PHARMA LIMITED COMPANY) </h3>
+                    <p style="margin: 0px;">Tên giao dịch: VIPHARMA CO., LTD. </p>
+                    <p style="margin: 0px;">Sản xuất kinh doanh Dược phẩm và Mỹ phẩm </p>
                 </div>
             </div>
-            <div class="col-lg-8 col-sm-12">
-                <div class="contact-form-right">
+        </div>
+    </div>
+</div>
+<!-- End All Title Box -->
+<div class="contact-box-main">
+    <div class="container">
+        <div class="title-all">
+            <h2>Liên hệ mua hàng: </h2>
+        </div>
+        <div runat="server" id="divContactUs"></div>
+        <hr>
+        <div class="title-all">
+            <h2>Liên hệ qua e-mail: </h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="contact-form">
                     <h2>Thông tin của bạn </h2>
-                    <p>Vui lòng cung cấp đầy đủ thông tin theo mẫu bên dưới:</p>
-
+                    <p>Vui lòng nhập đầy đủ và chính xác các thông tin bên dưới....</p>
                     <asp:Label ID="lblMessege" runat="server" Text=""></asp:Label>
                     <div class="row">
                         <div class="col-md-12">
@@ -34,7 +52,7 @@
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="text" runat="server" class="form-control" id="txtTitle" name="name" placeholder="Chủ đề" required data-error="Vui lòng chọn chủ đề">
+                                <input type="text" runat="server" class="form-control" id="txtTitle" name="name" placeholder="Chủ đề" required data-error="Vui lòng nhập chủ đề">
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
@@ -50,7 +68,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

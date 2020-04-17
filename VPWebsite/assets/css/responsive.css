@@ -115,8 +115,12 @@
     }
      .filter-button-group button{
          font-size: 14px;
-         padding: 5px 18px;
+         padding: 5px 0px;
     }
+	.filter-button-group button a
+	{
+		padding: 5px 20px;
+	}
      .title-blog h3{
          font-size: 16px;
     }

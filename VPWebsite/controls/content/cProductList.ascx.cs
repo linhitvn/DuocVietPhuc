@@ -12,7 +12,7 @@ public partial class controls_content_cProductList : System.Web.UI.UserControl
     {
         if (!Page.IsPostBack)
         {
-            LoadProductCategory();
+            //LoadProductCategory();
             LoadProducts(0);
         }
 
@@ -27,8 +27,8 @@ public partial class controls_content_cProductList : System.Web.UI.UserControl
 
             dt.Load(oData.USP_ProductCat_Client_GetAll());
 
-            rptProductCate.DataSource = dt;
-            rptProductCate.DataBind();
+            //rptProductCate.DataSource = dt;
+            //rptProductCate.DataBind();
         }
         catch
         {

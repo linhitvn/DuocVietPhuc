@@ -43,7 +43,13 @@ public class DAArticle : TDatabase
         //mCmd.Parameters.Add("@ArticleID", SqlDbType.Int).Value = ArticleID;
         return ExecuteReader();
     }
-
+    public SqlDataReader USP_Article_Client_GetInfo()
+    {
+        mCmd.CommandText = "USP_Article_Client_GetInfo";
+        mCmd.Parameters.Clear();
+        //mCmd.Parameters.Add("@ArticleID", SqlDbType.Int).Value = ArticleID;
+        return ExecuteReader();
+    }
     public SqlDataReader USP_Article_Client_GetTop()
     {
         mCmd.CommandText = "USP_Article_Client_GetTop";

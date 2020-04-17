@@ -6,7 +6,7 @@
     <!-- Meta -->    
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <title>The Vuong's Cosmetics</title>
+    <title>VIPHARMA CO., LTD. - VIET PHUC PHARMA LIMITED COMPANY</title>
     
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="" />
@@ -66,7 +66,7 @@
         <div class="container">
             <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                <input type="text" class="form-control" placeholder="ex: Shine Spray...">
+                <input type="text" class="form-control" placeholder="kem trị mụn Avi-O5...">
                 <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
             </div>
         </div>
@@ -82,7 +82,9 @@
         
     <div id="dvProduct" runat="server"></div>
     <div id="dvBestseller" runat="server"></div>
-
+    <!-- Start Banner  -->
+    <div class="footer-banner"></div>
+    <!-- End Banner  -->	
     <!-- Start Footer  -->
     <footer id="footer">
         <div id="dvFooter" runat="server"></div>
@@ -90,7 +92,7 @@
     <!-- End Footer  -->
     <!-- Start copyright  -->
     <div class="footer-copyright">
-        <p class="footer-company">2019 &copy; Bản quyền thuộc về <a href="#">VIPHARMA CO., LTD.</a></p>
+        <p class="footer-company">2020 &copy; Bản quyền thuộc về <a href="#">VIPHARMA CO., LTD.</a></p>
     </div>
     <!-- End copyright  -->
     <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>

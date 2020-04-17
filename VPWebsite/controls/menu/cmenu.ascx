@@ -19,6 +19,7 @@
                 <li class="nav-item" id="liHome" runat="server"><a class="nav-link" href="/">Trang chủ </a></li>
                 <li class="nav-item" id="liProduct" runat="server"><a class="nav-link" href="/san-pham/index.html">Sản phẩm </a></li>
                 <li class="nav-item" id="liAbout" runat="server"><a class="nav-link" href="/gioi-thieu/index.html">Giới thiệu </a></li>
+                <li class="nav-item" id="liInfo" runat="server"><a class="nav-link" href="/thong-tin/index.html">Thông tin </a></li>
                 <li class="nav-item" id="liContact" runat="server"><a class="nav-link" href="/lien-he/index.html">Liên hệ </a></li>
             </ul>
         </div>
@@ -28,12 +29,12 @@
         <div class="attr-nav">
             <ul>
                 <li class="search"><a href="#"><i class="fa fa-search-plus"></i></a></li>
-                <li class="side-menu"><a href="#">
+                <%--<li class="side-menu"><a href="#">
                     <i class="fa fa-shopping-cart"></i>
                     <span class="badge">
                         <asp:Label ID="lblQuantity" runat="server" Text="0"></asp:Label>
                     </span></a>
-                </li>
+                </li>--%>
             </ul>
         </div>
         <!-- End Atribute Navigation -->

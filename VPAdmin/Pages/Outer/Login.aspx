@@ -23,8 +23,9 @@
 </head>
 <body>
     <form id="form" runat="server" class="bg-black">
+            
         <div class="form-box" id="login-box">
-            <div class="header">Đăng nhập hệ thống</div>
+            <div class="header">Dược phẩm Việt Phúc - Admin</div>
             <div>
                 <div class="body bg-gray">
 
@@ -34,7 +35,7 @@
                     <br />
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                        <input runat="server" id="txtUserName" type="text" name="userid" class="form-control" placeholder="User ID" />
+                        <input runat="server" id="txtUserName" type="text" name="userid" class="form-control" placeholder="User name" />
                     </div>
                     <br />
                     <div class="input-group">
