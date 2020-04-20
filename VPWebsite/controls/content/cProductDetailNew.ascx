@@ -6,8 +6,10 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="title-all text-center">
-                    <h1>VIPHARMA CGMP-ASEAN </h1>
-                    <p>Dòng Mỹ phẩm Thương hiệu Độc quyền của VIPHARMA CO., LTD. </p>
+                    <h4>"Hàng Việt Nam Chất Lượng Cao" 2005 - 2020 </h4>
+                    <h5>(Liên tục nhiều năm liền từ 2005 - 2020)</h5>
+                    <h4>"TOP TEN ngành hàng thương hiệu Việt hội nhập WTO 2009" </h4>
+                    <h5>(Liên hiệp các hội Khoa học & Kỹ thuật Việt Nam)</h5>
                 </div>
             </div>
         </div>
