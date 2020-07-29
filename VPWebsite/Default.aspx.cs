@@ -70,7 +70,11 @@ public partial class _Default : System.Web.UI.Page
             case "SER":
                 // Search
                 dvProduct.Controls.Add(LoadControl(WebConfigurationManager.AppSettings["WebHome"] + "controls/content/cSearch.ascx"));
-                break;        
+                break;
+            case "PPOCI":
+                // Private policy
+                dvProduct.Controls.Add(LoadControl(WebConfigurationManager.AppSettings["WebHome"] + "controls/content/cPPOCI.ascx"));
+                break;
             default:
                 //// main home               
                 dvSlider.Controls.Add(LoadControl(WebConfigurationManager.AppSettings["WebHome"] + "controls/content/cSlider.ascx"));

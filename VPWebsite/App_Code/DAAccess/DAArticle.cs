@@ -87,4 +87,11 @@ public class DAArticle : TDatabase
         //mCmd.Parameters.Add("@ArticleID", SqlDbType.Int).Value = ArticleID;
         return ExecuteReader();
     }
+    public SqlDataReader USP_Article_Client_GetPrivatePolicy()
+    {
+        mCmd.CommandText = "USP_Article_Client_GetPrivatePolicy";
+        mCmd.Parameters.Clear();
+        //mCmd.Parameters.Add("@ArticleID", SqlDbType.Int).Value = ArticleID;
+        return ExecuteReader();
+    }
 }

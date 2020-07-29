@@ -46,8 +46,7 @@
 </head>
 <body>
     <form id="frmMain" runat="server">
-    <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
-    </telerik:RadScriptManager>
+     <telerik:RadScriptManager Runat="server"></telerik:RadScriptManager>
      <script lang="JavaScript" type="text/javascript">
         function EndRequestHandler() {
             theForm.action = document.location.href; theForm._initialAction = theForm.action;
